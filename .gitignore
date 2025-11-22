@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# Build / dist
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
