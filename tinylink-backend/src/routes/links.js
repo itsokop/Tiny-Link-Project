@@ -1,8 +1,12 @@
-import { Router } from 'express';
-import { createShortLink } from '../controllers/linksController.js';
+import express from 'express';
+import { createLink, getAllLinks, getLinkStats, deleteLink, } from '../controllers/linksController.js';
 
-const router = Router();
+const router = express.Router();
 
-router.post('/', createShortLink);
+// API Endpoints
+router.post('/', createLink);
+router.get('/', getAllLinks);
+router.get('/:code', getLinkStats);
+router.delete('/:code', deleteLink);
 
 export default router;
